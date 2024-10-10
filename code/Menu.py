@@ -14,13 +14,6 @@ class Menu:
         self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
-    def draw_menu(self):
-        # Desenha outras opções do menu
-        self.level_text(20, "Carlos Artur Brito da Silva - RU: 4540549", C_ORANGE, (10, WIN_WIDTH - 30))  # Canto inferior esquerdo
-
-
-
-
     def run(self):
         menu_option = 0
         pygame.mixer_music.load('./asset/Menu.mp3')
